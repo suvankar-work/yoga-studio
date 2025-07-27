@@ -1,0 +1,502 @@
+@media screen and (max-width: 1300px) {
+	.htw_cntn h1 {
+		font-size: 50px;
+		line-height: 72px;
+		margin-bottom: 35px;
+	}
+
+	.htw_cntn {
+		padding-top: 60px;
+		padding-bottom: 65px;
+	}
+
+	.heading {
+		font-size: 38px;
+		line-height: 50px;
+		margin-bottom: 20px;
+	}
+
+	.abtsw_box {
+		gap: 13px;
+	}
+
+	.abtsw_box h3 {
+		font-size: 16px;
+	}
+
+	.abtsw_box img {
+		width: 60px;
+	}
+
+	.community_bottom {
+		width: 60%;
+	}
+
+	.hiw_count_box h2 {
+		font-size: 52px;
+	}
+
+	.p-90 {
+		padding: 80px 0;
+	}
+
+	.pb-90-60 {
+		padding-top: 80px;
+		padding-bottom: 50px;
+	}
+
+	.subheading {
+		font-size: 17px;
+		margin-bottom: 15px;
+	}
+
+	.subscription_box .main_btn {
+		padding: 18px 20px;
+		width: 100%;
+	}
+
+	h2.subscrp_price {
+		font-size: 20px;
+		line-height: 25px;
+	}
+
+	h5.subscrp_type {
+		font-size: 14px;
+	}
+
+	.subscription_box {
+		gap: 10px;
+		padding: 30px 20px;
+	}
+
+	h3.yoga_name {
+		font-size: 15px;
+		line-height: 19px;
+	}
+
+	p.yoga_type {
+		font-size: 12px;
+	}
+
+	.explore_text {
+		padding: 13px 10px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.heading {
+		font-size: 32px;
+		line-height: 42px;
+	}
+
+	.subheading {
+		font-size: 16px;
+	}
+
+	.main_btn,
+	.solid_btn,
+	.secnd_btn,
+	.secnd_solid_btn {
+		font-size: 14px;
+	}
+
+	.bnrn_box h3 {
+		font-size: 16px;
+	}
+
+	.bnrn_box {
+		gap: 12px;
+		padding: 20px 0px;
+	}
+
+	.abt_secnd_wrapper {
+		flex-direction: column;
+	}
+
+	.abtsw_img {
+		display: none;
+	}
+
+	.about_section {
+		padding-bottom: 80px;
+	}
+
+	.pb-90-60 {
+		padding-top: 70px;
+		padding-bottom: 40px;
+	}
+
+	.p-90 {
+		padding: 70px 0;
+	}
+
+	.community_bottom {
+		width: 80%;
+	}
+
+	.hiw_count_box h2 {
+		font-size: 45px;
+	}
+
+	.bnr_next {
+		padding: 40px 0 60px;
+	}
+
+	.about_section {
+		padding-bottom: 70px;
+	}
+
+}
+
+@media screen and (max-width: 1025px) {
+	.htw_cntn h1 {
+		font-size: 46px;
+		line-height: 58px;
+		margin-bottom: 18px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.abt_fst .row {
+		flex-direction: column-reverse;
+	}
+
+	.abt_img {
+		text-align: center;
+	}
+
+	.abt_img img {
+		width: 70%;
+	}
+
+	.abtsw_text {
+		flex-wrap: wrap;
+	}
+
+	.heading br {
+		display: none;
+	}
+
+	.heading {
+		font-size: 29px;
+		line-height: 41px;
+	}
+
+	.hiw_top .row {
+		flex-direction: column-reverse;
+	}
+
+	.hiw_cntn {
+		margin-bottom: 50px;
+	}
+
+	.hiw_img {
+		text-align: center;
+	}
+
+	.hiw_count_box h2 {
+		font-size: 30px;
+	}
+
+	.p-90 {
+		padding: 60px 0;
+	}
+
+	.pb-90-60 {
+		padding-top: 60px;
+		padding-bottom: 30px;
+	}
+
+	.about_section {
+		padding-bottom: 60px;
+	}
+
+	.subscriptoion_left {
+		margin-bottom: 40px;
+	}
+
+	.ft_top {
+		padding-bottom: 40px;
+	}
+
+	.footer {
+		padding-top: 80px;
+	}
+
+	.ft_cards {
+		width: 50%;
+	}
+
+	.copyright p {
+		font-size: 14px;
+	}
+
+	.improve_top .row {
+		flex-direction: column-reverse;
+	}
+
+	.ip_text {
+		margin-bottom: 40px;
+	}
+
+	.footer_left {
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 953px) {
+	.htw_cntn h1 {
+		font-size: 39px;
+		line-height: 35px;
+		margin-bottom: 13px;
+	}
+}
+
+
+@media screen and (max-width: 829px) {
+	.htw_cntn h1 span {
+		display: none;
+	}
+
+	.htw_cntn h1 {
+		font-size: 40px;
+		line-height: 54px;
+	}
+
+	.htw_cntn {
+		padding-top: 30px;
+	}
+
+	.htw_cntn h1 br {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.register-left {
+		display: none;
+	}
+
+	.register-right {
+		flex: 1;
+		padding: 30px;
+	}
+
+	.trainer_box {
+		height: auto;
+	}
+
+	.trainer_wrapper {
+		padding-top: 40px;
+	}
+
+	.explore_wrapper {
+		margin-top: 40px;
+	}
+
+	.hero_bg_overlay {
+		width: 80%;
+	}
+
+	.bnrn_box p {
+		margin-bottom: 0;
+	}
+
+	.hiw_count_box span {
+		font-size: 13px;
+	}
+
+	.hiw_count_box h2 {
+		font-size: 21px;
+	}
+
+	.hiw_count_box {
+		padding: 15px 10px;
+	}
+
+	.hiw_btm {
+		padding-top: 90px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.hero_img_wrapper .swiper-slide {
+		text-align: center !important;
+	}
+
+	.community_bottom {
+		width: 90%;
+	}
+
+	.subscription_box {
+		flex-wrap: wrap;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	h2.subscrp_price {
+		font-size: 30px;
+		line-height: 35px;
+	}
+
+	.subscription_abt {
+		width: 100%;
+	}
+
+	.subscription_details {
+		width: 100%;
+	}
+
+	.testimonial_wrapper {
+		padding-top: 30px;
+	}
+
+	.faq_inner .accordion-button {
+		font-size: 14px;
+	}
+
+	.p-90 {
+		padding: 50px 0;
+	}
+
+	.pb-90-60 {
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+
+	.hiw_btm {
+		padding-top: 50px;
+	}
+
+	.community_section::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: #0e070094;
+		z-index: 1;
+	}
+
+	.community_section .container {
+		position: relative;
+		z-index: 2;
+	}
+
+	.community_top {
+		padding-bottom: 100px;
+	}
+
+	.heading {
+		font-size: 26px;
+		line-height: 38px;
+	}
+
+	.faq_inner {
+		margin-top: 30px;
+	}
+
+	.subheading {
+		font-size: 14px;
+	}
+
+	.community_rating_box img {
+		width: 100px;
+	}
+
+	.community_bottom {
+		padding: 20px 20px;
+	}
+
+	.abt_img {
+		padding-top: 30px;
+	}
+
+	.abt_img img {
+		width: 100%;
+	}
+
+	.htw_btn {
+		flex-wrap: wrap;
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.htw_btn a {
+		width: 100%;
+	}
+
+	.htw_cntn h1 {
+		font-size: 38px;
+		line-height: 50px;
+	}
+
+	.trainer_wrapper {
+		padding-top: 20px;
+	}
+
+	.footer form {
+		width: 85%;
+	}
+
+	.footer_right {
+		flex-direction: column;
+	}
+
+	.ft_nav {
+		width: 100%;
+		padding-bottom: 30px;
+	}
+
+	.ft_cntact_box p {
+		margin-bottom: 16px;
+	}
+
+	.ft_heading {
+		margin-bottom: 18px;
+	}
+
+	.ft_nav ul {
+		margin-bottom: 0;
+	}
+
+	.ft_bottom {
+		flex-direction: column;
+	}
+
+	.ft_top {
+		padding-bottom: 0px;
+	}
+
+	.explore_wrapper .swiper-button-next,
+	.explore_wrapper .swiper-button-prev {
+		width: 40px;
+		height: 40px;
+	}
+
+	.explore_wrapper .swiper-button-prev {
+		left: 0px;
+	}
+
+	.explore_wrapper .swiper-button-next {
+		right: 0px;
+	}
+
+	.hiw_count_box span {
+		line-height: 14px;
+	}
+
+	.hiw_count_box h2 {
+		font-size: 18px;
+	}
+
+	.hiw_count_box {
+		padding: 15px 5px;
+	}
+	.header {
+		padding: 15px 0;
+	}
+
+}
