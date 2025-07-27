@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "name": "Silent Yoga",
+    "type": "Mindfulness",
+    "duration": "1.5 hours",
+    "level": "Beginner",
+    "rating": 4.6,
+    "reviews": 32,
+    "teacher": "Aria Gomez",
+    "thumbnail": "assets/images/silent.jpg",
+    "image2": "assets/images/yoga_img-1.jpg",
+    "videoPreview": "https://youtu.be/hJbRpHZr_d0?si=yE8WuWxHzpoLt9Va",
+    "whatInside": [
+      "Mindful breathing techniques in silence.",
+      "Audio-free movements to enhance awareness.",
+      "Includes calming poses for nervous system reset.",
+      "Access on any device at your pace."
+    ],
+    "benefits": [
+      "Deep internal awareness and focus",
+      "Enhanced emotional regulation",
+      "Relieves sensory overload and tension",
+      "Ideal for introverts or overstimulated minds"
+    ],
+    "description1": "Silent Yoga blends physical postures with complete silence for a deeply inward experience. No music, no talking \u2014 just mindful breath and movement. This session combines mindful movement with expert guidance to help you reconnect with your body and mind. Whether you're a beginner or experienced, it offers clarity, structure, and personal space for growth.",
+    "description2": "It\u2019s perfect for creating inner stillness, especially for those needing a tech-free mental break. You'll leave this class feeling more grounded, energized, and aligned \u2014 ready to bring calm focus into your daily life."
+  },
+  {
+    "id": 2,
+    "name": "Blissfull Yoga",
+    "type": "Meditation",
+    "duration": "0.5 hours",
+    "level": "Beginner",
+    "rating": 4.8,
+    "reviews": 57,
+    "teacher": "Elicia Fox",
+    "thumbnail": "assets/images/blissfull.jpg",
+    "image2": "assets/images/yoga_img-2.jpg",
+    "videoPreview": "https://youtu.be/hJbRpHZr_d0?si=yE8WuWxHzpoLt9Va",
+    "whatInside": [
+      "Full-Body Stretch, Morning Energy Boost, or Deep Sleep Yoga.",
+      "25 minutes \u2013 perfect for daily practice or mid-day resets.",
+      "A brief intro or photo of the teacher to build trust and familiarity.",
+      "Get lifetime access in your dashboard \u2014 anytime, on any device."
+    ],
+    "benefits": [
+      "Reduces stress and anxiety through deep relaxation",
+      "Enhances sleep quality and mental clarity",
+      "Loosens tight muscles with gentle stretches",
+      "Promotes emotional grounding and mindfulness"
+    ],
+    "description1": "Each yoga session is designed to target specific goals \u2014 whether it\u2019s stress relief, flexibility, core strength, or deep relaxation. Users get full clarity on what to expect and why it\u2019s worth their time and energy. This session combines mindful movement with expert guidance to help you reconnect with your body and mind. Whether you're a beginner or experienced, it offers clarity, structure, and personal space for growth.",
+    "description2": "This soothing session is designed to guide you into a state of deep calm through gentle stretches, mindful breathwork, and restorative postures. You'll leave this class feeling more grounded, energized, and aligned \u2014 ready to bring calm focus into your daily life."
+  },
+  {
+    "id": 3,
+    "name": "Core Strength Yoga",
+    "type": "Power Yoga",
+    "duration": "45 mins",
+    "level": "Intermediate",
+    "rating": 4.7,
+    "reviews": 48,
+    "teacher": "Leo Martin",
+    "thumbnail": "assets/images/core.jpg",
+    "image2": "assets/images/yoga_img-3.jpg",
+    "videoPreview": "https://youtu.be/hJbRpHZr_d0?si=yE8WuWxHzpoLt9Va",
+    "whatInside": [
+      "Challenging core-focused flow.",
+      "Build endurance and burn calories.",
+      "High-intensity transitions with breath focus.",
+      "Designed for daily strength practice."
+    ],
+    "benefits": [
+      "Strengthens abdominal and lower back muscles",
+      "Improves balance and posture",
+      "Boosts metabolism and energy",
+      "Supports spinal alignment"
+    ],
+    "description1": "This energetic session targets the core muscles with powerful yoga movements that activate your center. This session combines mindful movement with expert guidance to help you reconnect with your body and mind. Whether you're a beginner or experienced, it offers clarity, structure, and personal space for growth.",
+    "description2": "Perfect for those looking to tone the body while improving focus and internal strength. You'll leave this class feeling more grounded, energized, and aligned \u2014 ready to bring calm focus into your daily life."
+  },
+  {
+    "id": 4,
+    "name": "Deep Stretch & Relax",
+    "type": "Restorative",
+    "duration": "25 mins",
+    "level": "Beginner",
+    "rating": 4.9,
+    "reviews": 68,
+    "teacher": "Maya Rao",
+    "thumbnail": "assets/images/stretch.jpg",
+    "image2": "assets/images/yoga_img-4.jpg",
+    "videoPreview": "https://youtu.be/hJbRpHZr_d0?si=yE8WuWxHzpoLt9Va",
+    "whatInside": [
+      "Gentle floor-based stretches.",
+      "Focus on hips, back, and shoulders.",
+      "Guided breath and mindfulness.",
+      "Slow-paced, no equipment needed."
+    ],
+    "benefits": [
+      "Releases tension and improves flexibility",
+      "Soothes the nervous system",
+      "Helps relieve chronic pain",
+      "Great for winding down before bed"
+    ],
+    "description1": "This deeply relaxing practice is meant to help you unwind, open tight areas, and melt stress away. This session combines mindful movement with expert guidance to help you reconnect with your body and mind. Whether you're a beginner or experienced, it offers clarity, structure, and personal space for growth.",
+    "description2": "Ideal for rest days or late-night sessions. You'll leave this class feeling more grounded, energized, and aligned \u2014 ready to bring calm focus into your daily life."
+  },
+  {
+    "id": 5,
+    "name": "Sunrise Energizer",
+    "type": "Morning Flow",
+    "duration": "30 mins",
+    "level": "Beginner",
+    "rating": 4.5,
+    "reviews": 40,
+    "teacher": "Nina Patel",
+    "thumbnail": "assets/images/sunrise.jpg",
+    "image2": "assets/images/yoga_img-5.jpg",
+    "videoPreview": "https://youtu.be/hJbRpHZr_d0?si=yE8WuWxHzpoLt9Va",
+    "whatInside": [
+      "Sun salutations and standing poses.",
+      "Increases blood flow and alertness.",
+      "Boosts mood and metabolism.",
+      "Sets a positive tone for your day."
+    ],
+    "benefits": [
+      "Wakes up the body and brain",
+      "Boosts energy and motivation",
+      "Supports immunity and detox",
+      "Improves daily focus and attitude"
+    ],
+    "description1": "Sunrise Energizer is your go-to practice for a powerful, positive start to your morning. This session combines mindful movement with expert guidance to help you reconnect with your body and mind. Whether you're a beginner or experienced, it offers clarity, structure, and personal space for growth.",
+    "description2": "You\u2019ll leave feeling clear, confident, and ready to take on the day. You'll leave this class feeling more grounded, energized, and aligned \u2014 ready to bring calm focus into your daily life."
+  },
+  {
+    "id": 6,
+    "name": "Evening Wind Down",
+    "type": "Relaxation",
+    "duration": "35 mins",
+    "level": "Beginner",
+    "rating": 4.8,
+    "reviews": 52,
+    "teacher": "James Chen",
+    "thumbnail": "assets/images/evening.jpg",
+    "image2": "assets/images/yoga_img-6.jpg",
+    "videoPreview": "https://youtu.be/hJbRpHZr_d0?si=yE8WuWxHzpoLt9Va",
+    "whatInside": [
+      "Gentle stretches to ease the day\u2019s tension.",
+      "Focus on legs, hips, and lower back.",
+      "Slow breathing and guided relaxation.",
+      "Optional use of props for comfort."
+    ],
+    "benefits": [
+      "Prepares the body for restful sleep",
+      "Calms the nervous system",
+      "Soothes muscle fatigue",
+      "Reduces late-day stress"
+    ],
+    "description1": "Designed to help you leave the day behind, this practice restores balance and calm. This session combines mindful movement with expert guidance to help you reconnect with your body and mind. Whether you're a beginner or experienced, it offers clarity, structure, and personal space for growth.",
+    "description2": "Pair it with dim lights and soft music for a bedtime ritual. You'll leave this class feeling more grounded, energized, and aligned \u2014 ready to bring calm focus into your daily life."
+  },
+  {
+    "id": 7,
+    "name": "Balance & Focus Flow",
+    "type": "Alignment",
+    "duration": "40 mins",
+    "level": "Intermediate",
+    "rating": 4.6,
+    "reviews": 38,
+    "teacher": "Priya Sharma",
+    "thumbnail": "assets/images/balance.jpg",
+    "image2": "assets/images/yoga_img-7.jpg",
+    "videoPreview": "https://youtu.be/hJbRpHZr_d0?si=yE8WuWxHzpoLt9Va",
+    "whatInside": [
+      "Standing balances and stability poses.",
+      "Mindfulness and gaze control.",
+      "Improves coordination and inner focus.",
+      "Great for mid-day reset or work breaks."
+    ],
+    "benefits": [
+      "Improves posture and joint control",
+      "Enhances mental clarity",
+      "Trains balance and body awareness",
+      "Strengthens ankles, knees, and hips"
+    ],
+    "description1": "This session blends mindful movement and balance training for total-body control. This session combines mindful movement with expert guidance to help you reconnect with your body and mind. Whether you're a beginner or experienced, it offers clarity, structure, and personal space for growth.",
+    "description2": "Ideal for improving focus and composure both on and off the mat. You'll leave this class feeling more grounded, energized, and aligned \u2014 ready to bring calm focus into your daily life."
+  },
+  {
+    "id": 8,
+    "name": "Detox Flow",
+    "type": "Twist & Cleanse",
+    "duration": "50 mins",
+    "level": "Intermediate",
+    "rating": 4.7,
+    "reviews": 46,
+    "teacher": "Ravi Mehta",
+    "thumbnail": "assets/images/detox.jpg",
+    "image2": "assets/images/yoga_img-8.jpg",
+    "videoPreview": "https://youtu.be/hJbRpHZr_d0?si=yE8WuWxHzpoLt9Va",
+    "whatInside": [
+      "Dynamic twists and core activation.",
+      "Stimulates digestion and circulation.",
+      "Includes breath of fire and cleansing breath.",
+      "Intermediate-level flow with clear cues."
+    ],
+    "benefits": [
+      "Supports liver and gut health",
+      "Flushes toxins through movement",
+      "Energizes and activates body systems",
+      "Reduces bloating and heaviness"
+    ],
+    "description1": "Detox Flow uses movement and breath to support your body\u2019s natural cleansing processes. This session combines mindful movement with expert guidance to help you reconnect with your body and mind. Whether you're a beginner or experienced, it offers clarity, structure, and personal space for growth.",
+    "description2": "Do it weekly or after overindulging to feel light and refreshed. You'll leave this class feeling more grounded, energized, and aligned \u2014 ready to bring calm focus into your daily life."
+  }
+]

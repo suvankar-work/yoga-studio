@@ -1,0 +1,73 @@
+[
+    {
+      "name": "Joe Thomas",
+      "type": "Meditation",
+      "experience": "7 years experience",
+      "image": "assets/images/trainer1.png",
+      "rating": 4.5
+    },
+    {
+      "name": "Ava Smith",
+      "type": "Hatha Yoga",
+      "experience": "5 years experience",
+      "image": "assets/images/trainer2.png",
+      "rating": 5
+    },
+    {
+      "name": "Ravi Kumar",
+      "type": "Power Yoga",
+      "experience": "6 years experience",
+      "image": "assets/images/trainer3.png",
+      "rating": 4
+    },
+    {
+      "name": "Emily Johnson",
+      "type": "Vinyasa Flow",
+      "experience": "4 years experience",
+      "image": "assets/images/trainer4.png",
+      "rating": 4.5
+    },
+    {
+      "name": "Michael Lee",
+      "type": "Ashtanga Yoga",
+      "experience": "8 years experience",
+      "image": "assets/images/trainer5.png",
+      "rating": 5
+    },
+    {
+      "name": "Sophia Martinez",
+      "type": "Yin Yoga",
+      "experience": "3 years experience",
+      "image": "assets/images/trainer6.png",
+      "rating": 4
+    },
+    {
+      "name": "Daniel Wilson",
+      "type": "Restorative Yoga",
+      "experience": "9 years experience",
+      "image": "assets/images/trainer7.png",
+      "rating": 5
+    },
+    {
+      "name": "Olivia Davis",
+      "type": "Prenatal Yoga",
+      "experience": "6 years experience",
+      "image": "assets/images/trainer8.png",
+      "rating": 5
+    },
+    {
+      "name": "James Miller",
+      "type": "Kundalini Yoga",
+      "experience": "10 years experience",
+      "image": "assets/images/trainer9.png",
+      "rating": 4.5
+    },
+    {
+      "name": "Isabella Clark",
+      "type": "Chair Yoga",
+      "experience": "4 years experience",
+      "image": "assets/images/trainer10.png",
+      "rating": 4
+    }
+  ]
+  
