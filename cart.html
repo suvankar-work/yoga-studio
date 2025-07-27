@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+
+    <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
+     <!-- Bootstrap -->
+     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+     <!-- font-awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+ 
+     <!-- Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+ 
+     <!-- fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+ 
+     <!-- custom css -->
+     <link href="assets/css/style.css" rel="stylesheet" />
+     <link href="assets/css/other_style.css" rel="stylesheet" />
+     <link href="assets/css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+
+    
+     <!-- header -->
+
+     <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg" alt="Logo" class="img-fluid"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Contact</a>
+              </li>
+            </ul>
+            <div class="nav_right" id="navRightArea">
+              <button type="button" class="log_btn" id="loginBtn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                Login / Register
+              </button>
+              <div class="welcome_box d-none" id="userWelcomeBox">
+                <span class="welcome_text">Welcome, <span id="userNameDisplay"></span></span>
+                <button class="logout_btn" id="logoutBtn" title="Logout"><i class="fa-solid fa-right-from-bracket"></i></button>
+              </div>
+            </div>        
+          </div>
+        </div>
+      </nav>
+    </header>
+
+  <!-- ===================== -->
+
+  <!-- inner banner -->
+
+  <section class="page_banner">
+    <div class="hamburgur_menu">
+        <div class="container">
+            <div class="hamburgur_menu_wrapper">
+                <a href="index.html" class="hb_list"><img src="assets/images/home.svg" alt=""></a>
+                <span class="hb_divider">/</span>
+                <span class="hb_list">Slot Booking</span>
+                <span class="hb_divider">/</span>
+                <span class="hb_crnt">Cart</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner_heading">
+        <div class="container">
+            <h2 class="secondary_heading">Shopping Cart</h2>
+        </div>
+    </div>
+  </section>
+
+  <!-- ===================== -->
+
+  <!-- inner_section -->
+
+  <section class="inner_section">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-7 col-12">
+          <div class="cart_cntn">
+            <div class="sec_heading">
+              <p>Your Order</p>
+            </div>
+            <div class="order_details">
+              <P class="pckge_ne" id="package_name"></P>
+              <ul class="pckg_det">
+                <li><i class="fa-solid fa-check"></i>Your subscription automatically renews <span id="next_subscription_type"></span></li>
+                <li><i class="fa-solid fa-check"></i> Next Charge on <span id="next_subscription"></span></li>
+              </ul>
+              <p class="pckg_info">If applicable, discount pricing applies only to the first payment, subsequent payments will be billed at the regular rate. You can cancel your subscription at any time.</p>
+              <h2 class="pckg_amnt" >$<span id="pckg_price">236</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="price_box">
+            <h3 class="price_title">Price Details</h3>
+          
+            <div class="price_row mb-0">
+              <p id="membershipType"></p>
+              <p class="pr_amnt" id="membershipPrice"></p>
+            </div>
+            <div class="price_subtext">
+              <small><span id="membershipSubtext"></span> / year</small>
+            </div>
+          
+            <div class="price_row">
+              <p><strong>Subtotal (<span id="itemCount"></span> item)</strong></p>
+              <p class="pr_amnt" id="subtotalAmount"></p>
+            </div>
+          
+            <div class="price_row">
+              <p>Discount (<span id="discountPercent"></span> Off)</p>
+              <p class="pr_amnt" id="discountAmount"></p>
+            </div>
+          
+            <hr />
+          
+            <div class="price_row total">
+              <p>Total Amount</p>
+              <p class="pr_total_amnt" id="totalAmount"></p>
+            </div>
+
+            <div class="gap"></div>
+          
+            <button class="secnd_btn w-100" id="checkout_btn">Proceed to Checkout <i class="fa-solid fa-arrow-right-long"></i></button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== -->
+
+       <!-- footer section -->
+
+       <footer class="footer">
+        <img src="assets/images/ft_logo.png" class="ft_logo img-fluid">
+        <div class="container">
+          <div class="ft_top">
+            <div class="row">
+              <div class="col-lg-6 col-md-5 col-12">
+                <div class="footer_left">
+                  <div class="ft_subscrbe">
+                    <h4 class="ft_heading">Subscribe to stay Updated</h4>
+                    <form id="email_subscribeForm">
+                      <input type="email" id="subscribeEmail" maxlength="50" required placeholder="Enter Your Email" class="form-control">
+                      <div id="subscribeEmailError" class="text-danger small mt-1"></div>
+                      <button class="ft_subscrbe_btn"><img src="assets/images/ft_arrow.svg" alt="Submit"></button>
+                    </form>                
+                  </div>
+                  <div class="ft_social">
+                    <a href="javascrip:void(0)" class="ft_social_icon"><i class="fa-brands fa-facebook-f"></i></a> 
+                    <a href="javascrip:void(0)" class="ft_social_icon"><i class="fa-brands fa-instagram"></i></a> 
+                    <a href="javascrip:void(0)" class="ft_social_icon"><i class="fa-brands fa-linkedin-in"></i></a> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-7 col-12">
+                <div class="footer_right">
+                  <div class="ft_nav">
+                    <h4 class="ft_heading">Contact</h4>
+                    <div class="ft_cntact_box">
+                      <p class="">Old Westbury 256, New York 11201, United States</p>
+                    </div>
+                    <div class="ft_cntact_box ft_ep_box">
+                      <p>E :</p>
+                      <span><a href="mailto:gayu@mails.com">gayu@mails.com</a></span>
+                    </div>
+                    <div class="ft_cntact_box ft_ep_box">
+                      <p>p :</p>
+                      <span ><a href="tel:+1 (234) 567 890">+1 (234) 567 890</a><br> <a href="tel:+1 (234) 567 890">+1 (234) 567 890</a></span>
+                    </div>
+                  </div>
+                  <div class="ft_nav ft_nav_link">
+                    <h4 class="ft_heading">Quick Link</h4>
+                    <ul class="list-unstyled">
+                      <li><a href="javascipt:void(0)">Home</a></li>
+                      <li><a href="javascipt:void(0)">About</a></li>
+                      <li><a href="javascipt:void(0)">Class & Schedules</a></li>
+                      <li><a href="javascipt:void(0)">Membership Plan</a></li>
+                      <li><a href="javascipt:void(0)">Blog</a></li>
+                    </ul>
+                  </div>
+                  <div class="ft_nav ft_nav_link">
+                    <h4 class="ft_heading">Legal</h4>
+                    <ul class="list-unstyled">
+                      <li><a href="javascipt:void(0)">Terms Of Service</a></li>
+                      <li><a href="javascipt:void(0)">Policy Service</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="ft_bottom d-flex align-items-center justify-content-between">
+            <div class="copyright">
+              <p class="mb-0">Copyright ©2025 Gayu. All rights reserved.</p>
+            </div>
+            <div class="ft_cards">
+              <img src="assets/images/card.png" alt="card">
+            </div>
+          </div>
+        </div>
+       </footer>
+  
+       <!-- ===================== -->
+
+  <!-- bootstrap JS -->
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- custom JS -->
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/cart.js"></script>
+
+ 
+ 
+   
+
+
+
+  
+
+    
+</body>
+</html>

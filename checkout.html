@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
+     <!-- Bootstrap -->
+     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+     <!-- font-awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+ 
+     <!-- Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+ 
+     <!-- fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+ 
+     <!-- custom css -->
+     <link href="assets/css/style.css" rel="stylesheet" />
+     <link href="assets/css/other_style.css" rel="stylesheet" />
+     <link href="assets/css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+
+      <!-- header -->
+
+      <header class="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg" alt="Logo" class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Contact</a>
+                </li>
+              </ul>
+              <div class="nav_right" id="navRightArea">
+                <button type="button" class="log_btn" id="loginBtn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Login / Register
+                </button>
+                <div class="welcome_box d-none" id="userWelcomeBox">
+                  <span class="welcome_text">Welcome, <span id="userNameDisplay"></span></span>
+                  <button class="logout_btn" id="logoutBtn" title="Logout"><i class="fa-solid fa-right-from-bracket"></i></button>
+                </div>
+              </div>        
+            </div>
+          </div>
+        </nav>
+      </header>
+
+  <!-- ===================== -->
+
+  <!-- inner banner -->
+
+  <section class="page_banner">
+    <div class="hamburgur_menu">
+        <div class="container">
+            <div class="hamburgur_menu_wrapper">
+                <a href="index.html" class="hb_list"><img src="assets/images/home.svg" alt=""></a>
+                <span class="hb_divider">/</span>
+                <span class="hb_list">Cart</span>
+                <span class="hb_divider">/</span>
+                <span class="hb_crnt">Checkout</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner_heading">
+        <div class="container">
+            <h2 class="secondary_heading">Checkout</h2>
+        </div>
+    </div>
+  </section>
+
+  <!-- ===================== -->
+
+  <!-- inner_section -->
+
+  <section class="inner_section">
+    <form id="checkoutForm">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-7 col-12">
+                <div class="checkout_left">
+                  
+                    <!-- Billing Address Section -->
+                    <div class="billing_wrapper">
+                      <div class="ch_frm_header">
+                        <h4>Billing Address</h4>
+                      </div>
+                      <div class="from_box">
+                        <div class="frm_wrapper">
+                          <label for="address" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="address" placeholder="Your Address">
+                          <div id="addressError" class="text-danger small mt-1"></div>
+                        </div>
+                        <div class="frm_wrapper">
+                          <label for="city" class="form-label">City</label>
+                          <input type="text" class="form-control" id="city" placeholder="Your City">
+                          <div id="cityError" class="text-danger small mt-1"></div>
+                        </div>
+                      </div>
+                      <div class="from_box">
+                        <div class="frm_wrapper">
+                          <label for="state" class="form-label">State</label>
+                          <select class="form-control form-select" id="state">
+                            <option value="" selected disabled>Your State</option>
+                          </select>
+                          <div id="stateError" class="text-danger small mt-1"></div>
+                        </div>
+                        <div class="frm_wrapper">
+                          <label for="postalCode" class="form-label">Postal Code</label>
+                          <input type="text" class="form-control" id="postalCode" placeholder="Your Post code">
+                          <div id="postalCodeError" class="text-danger small mt-1"></div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Payment Methods Section -->
+                    <div class="payment_wrapper">
+                      <div class="ch_frm_header">
+                        <h4>Payment Methods</h4>
+                        <p><img src="assets/images/lock.svg" alt=""> Secure and encrypted</p>
+                      </div>
+                      <img src="assets/images/payment_card.svg" alt="">
+                    </div>
+                  
+                    <!-- Card Details Section -->
+                    <div class="card_wrapper">
+                      <div class="ch_frm_header">
+                        <h4>Card Details</h4>
+                      </div>
+                      <div class="frm_wrapper">
+                        <label for="cardName" class="form-label">Cardholder's Name</label>
+                        <input type="text" class="form-control" id="cardName" placeholder="Your Cardholder Name">
+                        <div id="cardNameError" class="text-danger small mt-1"></div>
+                      </div>
+                      <div class="frm_wrapper">
+                        <label for="cardNumber" class="form-label">Card Number</label>
+                        <input type="text" class="form-control" id="cardNumber" placeholder="0000 0000 0000 0000">
+                        <div id="cardNumberError" class="text-danger small mt-1"></div>
+                      </div>
+                      <div class="from_box">
+                        <div class="frm_wrapper">
+                          <label for="expiryDate" class="form-label">Expiry Date</label>
+                          <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
+                          <div id="expiryDateError" class="text-danger small mt-1"></div>
+                        </div>
+                        <div class="frm_wrapper">
+                          <label for="cvc" class="form-label">CVC</label>
+                          <input type="text" class="form-control" id="cvc" placeholder="CVC">
+                          <div id="cvcError" class="text-danger small mt-1"></div>
+                        </div>
+                      </div>
+                    </div>                                    
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="price_box">
+                    <h3 class="price_title">Order summary</h3>
+                  
+                    <div class="price_row mb-0">
+                      <p id="membershipType">Annual Membership</p>
+                      <p class="pr_amnt" id="membershipPrice">$236</p>
+                    </div>
+                    <div class="price_subtext">
+                      <small id="membershipSubtext">$236 / year</small>
+                    </div>
+                  
+                    <div class="price_row">
+                      <p><strong>Subtotal (<span id="itemCount">1</span> item)</strong></p>
+                      <p class="pr_amnt" id="subtotalAmount">$169</p>
+                    </div>
+                  
+                    <div class="price_row">
+                      <p>Discount (<span id="discountPercent">40%</span> Off)</p>
+                      <p class="pr_amnt" id="discountAmount">-$67</p>
+                    </div>
+                  
+                    <hr />
+                  
+                    <div class="price_row total">
+                      <p>Total Amount</p>
+                      <p class="pr_total_amnt" id="totalAmount">$169</p>
+                    </div>
+        
+                    <div class="gap"></div>
+
+                    <div class="terms_agree">
+                        <p>By completing your purchase, you agree to these 
+                           <a href="#">Terms of Use</a></p>
+                    </div>
+                  
+                    <button class="secnd_btn w-100" id="checkout_btn">Complete Purchase <i class="fa-solid fa-arrow-right-long"></i></button>
+
+                    <div class="gurrenty_sec text-center">
+                        <p class="grnty_30">30-Day Money-Back Guarantee</p>
+                        <p>Not satisfied? Get a full refund within 30 days. Simple and straightforward! </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    </form>
+  </section>
+
+  <!-- ===================== -->
+
+       <!-- footer section -->
+
+       <footer class="footer">
+        <img src="assets/images/ft_logo.png" class="ft_logo img-fluid">
+        <div class="container">
+          <div class="ft_top">
+            <div class="row">
+              <div class="col-lg-6 col-md-5 col-12">
+                <div class="footer_left">
+                  <div class="ft_subscrbe">
+                    <h4 class="ft_heading">Subscribe to stay Updated</h4>
+                    <form id="email_subscribeForm">
+                      <input type="email" id="subscribeEmail" maxlength="50" required placeholder="Enter Your Email" class="form-control">
+                      <div id="subscribeEmailError" class="text-danger small mt-1"></div>
+                      <button class="ft_subscrbe_btn"><img src="assets/images/ft_arrow.svg" alt="Submit"></button>
+                    </form>                
+                  </div>
+                  <div class="ft_social">
+                    <a href="javascrip:void(0)" class="ft_social_icon"><i class="fa-brands fa-facebook-f"></i></a> 
+                    <a href="javascrip:void(0)" class="ft_social_icon"><i class="fa-brands fa-instagram"></i></a> 
+                    <a href="javascrip:void(0)" class="ft_social_icon"><i class="fa-brands fa-linkedin-in"></i></a> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-7 col-12">
+                <div class="footer_right">
+                  <div class="ft_nav">
+                    <h4 class="ft_heading">Contact</h4>
+                    <div class="ft_cntact_box">
+                      <p class="">Old Westbury 256, New York 11201, United States</p>
+                    </div>
+                    <div class="ft_cntact_box ft_ep_box">
+                      <p>E :</p>
+                      <span><a href="mailto:gayu@mails.com">gayu@mails.com</a></span>
+                    </div>
+                    <div class="ft_cntact_box ft_ep_box">
+                      <p>p :</p>
+                      <span ><a href="tel:+1 (234) 567 890">+1 (234) 567 890</a><br> <a href="tel:+1 (234) 567 890">+1 (234) 567 890</a></span>
+                    </div>
+                  </div>
+                  <div class="ft_nav ft_nav_link">
+                    <h4 class="ft_heading">Quick Link</h4>
+                    <ul class="list-unstyled">
+                      <li><a href="javascipt:void(0)">Home</a></li>
+                      <li><a href="javascipt:void(0)">About</a></li>
+                      <li><a href="javascipt:void(0)">Class & Schedules</a></li>
+                      <li><a href="javascipt:void(0)">Membership Plan</a></li>
+                      <li><a href="javascipt:void(0)">Blog</a></li>
+                    </ul>
+                  </div>
+                  <div class="ft_nav ft_nav_link">
+                    <h4 class="ft_heading">Legal</h4>
+                    <ul class="list-unstyled">
+                      <li><a href="javascipt:void(0)">Terms Of Service</a></li>
+                      <li><a href="javascipt:void(0)">Policy Service</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="ft_bottom d-flex align-items-center justify-content-between">
+            <div class="copyright">
+              <p class="mb-0">Copyright ©2025 Gayu. All rights reserved.</p>
+            </div>
+            <div class="ft_cards">
+              <img src="assets/images/card.png" alt="card">
+            </div>
+          </div>
+        </div>
+       </footer>
+  
+       <!-- ===================== -->
+
+
+  <!-- bootstrap JS -->
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- custom JS -->
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/checkout.js"></script>
+    
+</body>
+</html>

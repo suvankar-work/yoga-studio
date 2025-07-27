@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
+  <!-- Bootstrap -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/other_style.css" rel="stylesheet" />
+  <link href="assets/css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="register-wrapper">
+    <!-- Left Side: Image -->
+    <div class="register-left"></div>
+
+    <!-- Right Side: Form -->
+    <div class="register-right">
+      <div class="register-box">
+        <h2>Create Your Account</h2>
+        <form id="registerForm">
+          <div class="frm_wrapper">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Choose a username">
+            <div id="usernameError" class="text-danger small mt-1"></div>
+          </div>
+
+          <div class="frm_wrapper">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            <div id="emailError" class="text-danger small mt-1"></div>
+          </div>
+
+          <div class="frm_wrapper">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter a password">
+            <div id="passwordError" class="text-danger small mt-1"></div>
+          </div>
+
+          <div class="frm_wrapper">
+            <label for="confirmPassword" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password">
+            <div id="confirmPasswordError" class="text-danger small mt-1"></div>
+          </div>
+
+          <button type="submit" class="main_btn w-100 mt-3">Register <i class="fa-solid fa-arrow-right-long"></i></button>
+
+          <div class="text-center mt-3 dont_box">
+            <p><small>Already have an account? <a href="index.html?showLogin=true">Login here</a></small></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Libraries -->
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Custom Validation -->
+  <script src="assets/js/form_validation.js"></script>
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>

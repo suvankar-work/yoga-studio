@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoga Studio</title>
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
+  <!-- Bootstrap -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+  <!-- custom css -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/other_style.css" rel="stylesheet" />
+  <link href="assets/css/responsive.css" rel="stylesheet" />
+
+
+
+</head>
+<body>
+
+  <!-- header -->
+
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg" alt="Logo" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Contact</a>
+            </li>
+          </ul>
+          <div class="nav_right" id="navRightArea">
+            <button type="button" class="log_btn" id="loginBtn" data-bs-toggle="modal" data-bs-target="#loginModal">
+              Login / Register
+            </button>
+            <div class="welcome_box d-none" id="userWelcomeBox">
+              <span class="welcome_text">Welcome, <span id="userNameDisplay"></span></span>
+              <button class="logout_btn" id="logoutBtn" title="Logout"><i class="fa-solid fa-right-from-bracket"></i></button>
+            </div>
+          </div>        
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content login-modal-content">
+        <div class="modal-body p-0 d-flex">
+  
+          <div class="login-left d-none d-md-block col-md-6"></div>
+  
+          <div class="login-right col-12 col-md-6 d-flex flex-column justify-content-center align-items-center position-relative p-5">
+           
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-4" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+            <div class="login-form-box w-100" style="max-width: 400px;">
+              <h2 class="text-center mb-4">Welcome Back</h2>
+              <form id="loginForm" class="mt-md-5">
+                <!-- Username or Email -->
+                <div class="frm_wrapper">
+                  <label for="usernameLogin" class="form-label">Username or Email</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="usernameLogin"
+                    placeholder="Enter your email or username"
+                    autocomplete="username"
+                  />
+                  <div id="usernameLoginError" class="text-danger small mt-1"></div>
+                </div>
+              
+                <!-- Password -->
+                <div class="frm_wrapper">
+                  <label for="passwordLogin" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="passwordLogin"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                  />
+                  <div id="passwordLoginError" class="text-danger small mt-1"></div>
+                </div>
+              
+                <!-- Remember Me -->
+                <div class="frm_wrapper form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="rememberMe"
+                  />
+                  <label class="form-check-label" for="rememberMe">Remember me</label>
+                </div>
+              
+                <!-- Submit Button -->
+                <button type="submit" class="main_btn w-100 mt-3">Login <i class="fa-solid fa-arrow-right-long"></i></button>
+              
+                <!-- Register Link -->
+                <div class="text-center mt-3 dont_box">
+                  <p><small>Don't have an account? <a href="register.html">Register here</a></small></p>
+                </div>
+              </form>
+              
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== -->
+
+  <!-- hero section -->
+
+  <section class="hero_sec">
+    <img src="assets/images/main-home-offset-img 1.png" class="hero_bg_overlay img-fluid" >
+    <div class="container-fluid">
+      <div class="hero_text_wrapper">
+        <div class="htw_cntn text-center">
+          <h1>Yoga, <span><img src="assets/images/yoga.png" alt="" class="img-fluid"></span> Meditation, <span><img src="assets/images/meditation.png" alt="" class="img-fluid"></span> And <br><span><img src="assets/images/image 5.png" alt="" class="img-fluid"></span> Self-Care for a Balanced Life </h1>
+          <div class="htw_btn d-flex align-items-center justify-content-center">
+            <a href="#about" class="main_btn">Explore More <i class="fa-solid fa-arrow-right-long"></i></a>
+            <a href="#pricing" class="solid_btn">Book Class <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero_img_wrapper">
+        <div class="swiper heroImageSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/images/hero_image1.png" alt="" class="img-fluid"/></div>
+            <div class="swiper-slide"><img src="assets/images/hero_image2.png" alt="" class="img-fluid"/></div>
+            <div class="swiper-slide"><img src="assets/images/hero_image3.png" alt="" class="img-fluid"/></div>
+            <div class="swiper-slide"><img src="assets/images/hero_image4.png" alt="" class="img-fluid"/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== -->
+
+  <!-- section 3 -->
+
+  <section class="bnr_next">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="bnrn_box">
+            <img src="assets/images/meditation.svg" alt="">
+            <h3>Meditation</h3>
+            <p>Find calm and clarity in each breath. Boost focus and inner peace naturally.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="bnrn_box">
+            <img src="assets/images/aeroma.svg" alt="">
+            <h3>Aromatherapy</h3>
+            <p>Experience the healing power of essential oils. Refresh your senses and mind.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="bnrn_box">
+            <img src="assets/images/yoga.svg" alt="">
+            <h3>Yoga Asanas</h3>
+            <p>Stretch, strengthen, and flow with grace. Align body and soul in harmony.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="bnrn_box">
+            <img src="assets/images/sound.svg" alt="">
+            <h3>Sound Theraphy</h3>
+            <p>Relax to rhythmic sound healing tones. Reset energy through peaceful waves.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== -->
+
+  <!-- about section -->
+
+  <section class="about_section pb-90" id="about">
+    <div class="abt_fst">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-12">
+            <div class="abt_img">
+              <img src="assets/images/reason_left.png" alt="about_img" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="abt_cntn">
+              <p class="subheading">Reasons to Join Us</p>
+              <h2 class="heading">More Than Just Yoga — It’s a Complete Wellness Experience</h2>
+              <p>Our platform is built to support your physical, mental, and emotional well-being through expert-led sessions, flexible access, and personalized growth. Whether you're just beginning or deepening your practice, we offer a space that truly supports you.</p>
+              <p>Join a community that values balance, healing, and mindful progress — one breath at a time.
+                Would you like an alternate line with a more energetic or motivational tone?</p>
+              
+              <a href="register.html" class="main_btn">Register Now <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="abt_secnd">
+      <div class="container">
+        <div class="abt_secnd_wrapper">
+          <div class="abtsw_text">
+            <div class="abtsw_box">
+              <img src="assets/images/holistic.svg" alt=""> 
+              <h3 class="text-light">Expert-Led & Holistic</h3>
+              <p class="para_light">All classes are guided by certified yoga instructors and wellness professionals, combining yoga, meditation, and healing practices for a complete approach to self-care.</p>
+            </div>
+            <div class="abtsw_box">
+              <img src="assets/images/anytime.svg" alt=""> 
+              <h3 class="text-light">Anytime, Anywhere</h3>
+              <p class="para_light">Access your classes 24/7 from any device — at home, on the go, or while traveling. Your wellness should fit your schedule, not the other way around.</p>
+            </div>
+            <div class="abtsw_box">
+              <img src="assets/images/progress.svg" alt=""> 
+              <h3 class="text-light">Progress Your Way</h3>
+              <p class="para_light">Whether you're subscribing or purchasing individual videos, you get full freedom to grow at your pace — no commitments, no pressure.</p>
+            </div>
+          </div>
+          <div class="abtsw_img">
+            <img src="assets/images/3r.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+     
+  <!-- ===================== -->
+
+  <!-- explore section -->
+
+  <section class="explore_sec pb-90-60">
+    <div class="container">
+      <div class="sec_head text-center">
+        <p class="subheading">Explore Our Yoga Classes</p>
+        <h2 class="heading">Thousand Of yoga practice to inspire <br>and uplift</h2>
+      </div>
+
+        <div class="explore_wrapper">
+          <div class="swiper exploreSwiper">
+            <div class="swiper-wrapper" id="yogaSwiperWrapper">
+              <!-- Slides will be injected dynamically -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+      
+    </div>
+  </section>
+
+  <!-- ===================== -->
+
+  <!-- improve section -->
+
+  <section class="improve_section p-90">
+    <div class="container">
+      <div class="improve_top">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-12">
+            <div class="ip_img text-center">
+              <img src="assets/images/iph.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="ip_text">
+              <p class="subheading text-white">Improve Physical Health</p>
+              <h2 class="heading text-white">Experience Balance, Strength, and Serenity</h2>
+              <p class="para_light">Our classes are designed to challenge and inspire you while ensuring a safe and supportive atmosphere for all.</p>
+              <ul>
+                <li class="text-white"><img src="assets/images/flower.svg">Increase Flexibility</li>
+                <li class="text-white"><img src="assets/images/flower.svg">Enhance Strength</li>
+                <li class="text-white"><img src="assets/images/flower.svg">Get Better Posture</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="improve_bottom">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-12">
+            <div class="ip_text">
+              <p class="subheading text-white">Mental Well-Being</p>
+              <h2 class="heading text-white">Find Harmony in Body and Mind</h2>
+              <p class="para_light">Yoga incorporates mindful breathing and relaxation techniques that can significantly reduce stress levels. It helps activate the body’s relaxation response, leading to decreased cortisol levels Our classes are designed to challenge and inspire you while ensuring a safe and supportive atmosphere for all.</p>
+              <a href="register.html" class="secnd_btn">Register now for free <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="ip_img text-center">
+              <img src="assets/images/fhbam.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== -->
+
+  <!-- trainer section -->
+
+  <section class="trainer_sec pb-90-60">
+    <div class="container">
+      <div class="sec_head text-center">
+        <p class="subheading">Meet Your Guides on the Mat</p>
+        <h2 class="heading">Connect and grow with top <br>instructor</h2>
+      </div>
+      <div class="trainer_wrapper">
+        <div class="swiper trainerSwiper">
+          <div class="swiper-wrapper" id="trainerSwiperWrapper">
+             
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== -->
+
+  <!-- community section -->
+   
+  <section class="community_section p-90">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 col-12">
+          <div class="community_wrapper">
+            <div class="community_top">
+              <h2 class="heading text-white">Join Our Yoga Community — It's Free to Get Started</h2>
+              <p class="text-white">Get instant access to your dashboard, manage subscriptions, track your progress — and unlock exclusive yoga classes tailored to your goals, all in one peaceful place.</p>
+              <a href="register.html" class="secnd_btn">Register now for free <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+            <div class="community_bottom">
+              <div class="community_rating_box">
+                <img src="assets/images/user.png" alt="" class="img-fluid">
+                <p class="text-white">Rated <strong>4.8/5</strong> by <br>
+                  Over 1,500 Happy Yogis</p>
+              </div>
+              <div class="community_rating_text">
+                <p class="text-white">Ready to feel amazing? Sign up now and start your first class in minutes!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- ===================== -->
+    
+   <!-- how it work section -->
+
+   <section class="hiw_section p-90">
+    <div class="container">
+      <div class="hiw_top">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-12">
+            <div class="hiw_img">
+              <img src="assets/images/how_works.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="hiw_cntn">
+              <p class="subheading">Meet Your Guides on the Mat</p>
+              <h2 class="heading">Connect and grow with top instructor</h2>
+              <div class="hiw_wrapper">
+                <div class="hiw_box">
+                  <span class="hiw_number">01</span>
+                  <div class="hiw_text">
+                    <h3>Create an Account</h3>
+                    <p>Sign up in seconds with your email or social login. Your personal dashboard gives you access to all your purchases and subscriptions.</p>
+                  </div>
+                </div>
+                <div class="hiw_box">
+                  <span class="hiw_number">02</span>
+                  <div class="hiw_text">
+                    <h3>Choose a Plan or Class</h3>
+                    <p>Subscribe for full access to our yoga video library, or purchase individual classes that suit your goals — flexibility, relaxation, strength, or meditation.</p>
+                  </div>
+                </div>
+                <div class="hiw_box">
+                  <span class="hiw_number">03</span>
+                  <div class="hiw_text">
+                    <h3>Practice Anytime, Anywhere</h3>
+                    <p>Stream videos on your schedule from any device. Whether you have 10 minutes or an hour, there’s a class ready for you.</p>
+                  </div>
+                </div>
+              </div>
+              <a href="register.html" class="main_btn">Book Now <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hiw_btm">
+        <div class="hiwbtm_wrapper">
+          <div class="hiw_count_box">
+            <h2>98+</h2>
+            <span>Attendees</span>
+          </div>
+          <div class="hiw_count_box">
+            <h2>400+</h2>
+            <span>Active Members</span>
+          </div>
+          <div class="hiw_count_box">
+            <h2>10+</h2>
+            <span>Instructors</span>
+          </div>
+          <div class="hiw_count_box">
+            <h2>99.5%</h2>
+            <span>Positive Reviews</span>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <!-- ===================== -->
+
+   <!-- subscription section -->
+
+   <section class="subscription_section p-90" id="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-4 col-12">
+          <div class="subscriptoion_left">
+            <p class="subheading">Subscription Plans</p>
+            <h2 class="heading">Find your perfect plan</h2>
+            <p>Level up your wellness journey with full access to our complete library of yoga classes, guided meditations, and healing sessions. Whether you're a beginner or advanced, our subscription keeps your practice consistent and evolving — anytime, anywhere.</p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-8 col-12">
+          <div class="subscription_right">
+            <div class="subscription_box">
+              <div class="subscription_abt">
+                <span class="discount_tag">Save 30%</span>
+                <h5 class="subscrp_type">Annual Membership</h5>
+                <h2 class="subscrp_price">$14.08 / Month</h2>
+                <p class="yearly_subs">Billed once annually at <span class="yearly_amnt">$169.00</span></p>
+                <a href="#" class="main_btn buy-plan-btn" data-plan="annual">Get Annual Plan <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+              <div class="subscription_details">
+                <h4>Unlimited Access To :</h4>
+                <ul>
+                  <li><img src="assets/images/check.svg" alt="">20+ on demand yoga practice</li>
+                  <li><img src="assets/images/check.svg" alt="">30+ audio and video meditation</li>
+                  <li><img src="assets/images/check.svg" alt="">150+ courses and challenges</li>
+                  <li><img src="assets/images/check.svg" alt="">Free live session for  12 hrs / month</li>
+                  <li><img src="assets/images/check.svg" alt=""><b>12 Months for the price of 9</b></li>
+                  <li><img src="assets/images/check.svg" alt=""><b>Bonus:</b> Free digital practical journal</li>
+                </ul>
+              </div>
+            </div>
+            <div class="subscription_box">
+              <div class="subscription_abt">
+                <!-- <span class="discount_tag">Save 30%</span> -->
+                <h5 class="subscrp_type">Monthly Membership</h5>
+                <h2 class="subscrp_price">$19.99 / Month</h2>
+                <!-- <p class="yearly_subs">Billed once annually at <span class="yearly_amnt">$169.00</span></p> -->
+                <a href="#" class="main_btn buy-plan-btn" data-plan="monthly">Get Monthly Plan <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+              <div class="subscription_details">
+                <h4>Unlimited Access To :</h4>
+                <ul>
+                  <li><img src="assets/images/check.svg" alt="">5+ on demand yoga practice</li>
+                  <li><img src="assets/images/check.svg" alt="">10+ audio and video meditation</li>
+                  <li><img src="assets/images/check.svg" alt="">150+ courses and challenges</li>
+                  <li><img src="assets/images/check.svg" alt="">Free live session for 8 hrs / month </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+
+    <!-- ===================== -->
+
+    <!-- testimonials section -->
+
+    <section class="testimonial_section p-90">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 col-12">
+            <div class="sec_head">
+              <p class="subheading text-white">Testimonials</p>
+              <h2 class="heading text-white">Sweet Reviews From Our Members</h2>
+              <p class="para_light">Join thousands who’ve found balance, strength, and peace through our online yoga classes. Experience personal growth, reduced stress, and a deeper connection to yourself—anytime, anywhere. See why our community loves practicing with us.</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial_wrapper">
+          <div class="swiper reviewSwiper">
+            <div class="swiper-wrapper" id="testimoniSwiperWrapper">
+              <div class="swiper-slide">
+                <div class="review_box">
+                  <div class="reviewbox_top">
+                    <div class="rb_star">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <p class="rb_text">
+                      Yoga has become a natural part of my life. I've lost 2 kg and am aiming to lose 3 more, confident that I will achieve it with continued effort. The changes in my nutrition have also been significant.
+                    </p>
+                  </div>
+                  <div class="reviewbox_bottom">
+                    <hr>
+                  <div class="rb_user_det">
+                    <h5>Olivia K</h5>
+                    <span>5 Years &nbsp; | &nbsp; 20 Yoga Days</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review_box">
+                  <div class="reviewbox_top">
+                  <div class="rb_star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                  <p class="rb_text">
+                    I used to struggle with breathlessness on hikes, needing to stop halfway, or use a stick for support. This year, after practising yoga for about 300 days continuously, I hiked with ease and comfort. Happy to inform you that continuous Yoga can do wonders! Thank you.
+                  </p>
+                  </div>
+                <div class="reviewbox_bottom">
+                  <hr>
+                  <div class="rb_user_det">
+                    <h5>Linda Watson</h5>
+                    <span>5 Years &nbsp; | &nbsp; 20 Yoga Days</span>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review_box">
+                  <div class="reviewbox_top">
+                  <div class="rb_star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                  <p class="rb_text">
+                    After a month of preparation, I completed the TCS World 10K marathon in 1 hour 18 minutes without any breathlessness. My stamina & strength have greatly improved due to daily yoga practice.
+                  </p>
+                  </div>
+                  <div class="reviewbox_bottom">
+                  <hr>
+                  <div class="rb_user_det">
+                    <h5>Mikes Brown</h5>
+                    <span>5 Years &nbsp; | &nbsp; 20 Yoga Days</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review_box">
+                  <div class="reviewbox_top">
+                  <div class="rb_star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                  <p class="rb_text">
+                    Yoga has become a natural part of my life. I've lost 2 kg and am aiming to lose 3 more, confident that I will achieve it with continued effort. The changes in my nutrition have also been significant.
+                  </p>
+                  </div>
+                  <div class="reviewbox_bottom">
+                  <hr>
+                  <div class="rb_user_det">
+                    <h5>Jhon C</h5>
+                    <span>5 Years &nbsp; | &nbsp; 20 Yoga Days</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review_box">
+                  <div class="reviewbox_top">
+                  <div class="rb_star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                  <p class="rb_text">
+                    I used to struggle with breathlessness on hikes, needing to stop halfway, or use a stick for support. This year, after practising yoga for about 300 days continuously, I hiked with ease and comfort. Happy to inform you that continuous Yoga can do wonders! Thank you.
+                  </p>
+                  </div>
+                  <div class="reviewbox_bottom">
+                  <hr>
+                  <div class="rb_user_det">
+                    <h5>Juila C</h5>
+                    <span>5 Years &nbsp; | &nbsp; 20 Yoga Days</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review_box">
+                  <div class="reviewbox_top">
+                  <div class="rb_star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                  <p class="rb_text">
+                    After a month of preparation, I completed the TCS World 10K marathon in 1 hour 18 minutes without any breathlessness. My stamina & strength have greatly improved due to daily yoga practice.
+                  </p>
+                  </div>
+                  <div class="reviewbox_bottom">
+                  <hr>
+                  <div class="rb_user_det">
+                    <h5>Randy O</h5>
+                    <span>5 Years &nbsp; | &nbsp; 20 Yoga Days</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+         
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== -->
+
+     <!-- FAQ section -->
+
+     <section class="faq_section p-90" id="faq">
+      <div class="container">
+        <div class="sec_head text-center">
+          <p class="subheading">FAQ</p>
+          <h2 class="heading">Your Questions, Answered — <br>Everything You Need to Know</h2>
+        </div>
+        <div class="faq_wrapper">
+          <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-10 col-12">
+              <div class="faq_inner">
+                <div class="accordion" id="gayuaccordian">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Do I need a subscription to access yoga classes?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#gayuaccordian">
+                      <div class="accordion-body">
+                        Yes, a subscription is needed to access our full range of yoga classes. Once subscribed, you get unlimited access to all videos, including beginner to advanced levels, guided programs, and new weekly uploads.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What’s included in a subscription plan?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#gayuaccordian">
+                      <div class="accordion-body">
+                        Your subscription gives you unlimited access to all yoga classes, guided programs, and weekly new uploads. It also includes expert-led sessions, practice calendars, and the flexibility to stream anytime on any device.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Are the classes suitable for beginners?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#gayuaccordian">
+                      <div class="accordion-body">
+                        Yes, our classes are beginner-friendly with step-by-step guidance. We offer specially designed beginner programs, slow-paced sessions, and pose breakdowns to help you build confidence and progress at your own pace.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        What if I want to cancel my subscription?
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#gayuaccordian">
+                      <div class="accordion-body">
+                        You can cancel your subscription anytime from your account settings. Once canceled, you’ll retain access until the end of your current billing period—no hidden fees or commitments.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Can I download the classes after purchasing?
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#gayuaccordian">
+                      <div class="accordion-body">
+                        No, classes are available for streaming only and cannot be downloaded. However, you can access them anytime online from any device with your active subscription.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     
+
+     <!-- ===================== -->
+
+
+     <!-- footer section -->
+
+     <footer class="footer">
+      <img src="assets/images/ft_logo.png" class="ft_logo img-fluid">
+      <div class="container">
+        <div class="ft_top">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <div class="footer_left">
+                <div class="ft_subscrbe">
+                  <h4 class="ft_heading">Subscribe to stay Updated</h4>
+                  <form id="email_subscribeForm">
+                    <input type="email" id="subscribeEmail" maxlength="50" required placeholder="Enter Your Email" class="form-control">
+                    <div id="subscribeEmailError" class="text-danger small mt-1"></div>
+                    <button class="ft_subscrbe_btn"><img src="assets/images/ft_arrow.svg" alt="Submit"></button>
+                  </form>                
+                </div>
+                <div class="ft_social">
+                  <a href="javascrip:void(0)" class="ft_social_icon"><i class="fa-brands fa-facebook-f"></i></a> 
+                  <a href="javascrip:void(0)" class="ft_social_icon"><i class="fa-brands fa-instagram"></i></a> 
+                  <a href="javascrip:void(0)" class="ft_social_icon"><i class="fa-brands fa-linkedin-in"></i></a> 
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6  col-12">
+              <div class="footer_right">
+                <div class="ft_nav">
+                  <h4 class="ft_heading">Contact</h4>
+                  <div class="ft_cntact_box">
+                    <p class="">Old Westbury 256, New York 11201, United States</p>
+                  </div>
+                  <div class="ft_cntact_box ft_ep_box">
+                    <p>E :</p>
+                    <span><a href="mailto:gayu@mails.com">gayu@mails.com</a></span>
+                  </div>
+                  <div class="ft_cntact_box ft_ep_box">
+                    <p>p :</p>
+                    <span ><a href="tel:+1 (234) 567 890">+1 (234) 567 890</a><br> <a href="tel:+1 (234) 567 890">+1 (234) 567 890</a></span>
+                  </div>
+                </div>
+                <div class="ft_nav ft_nav_link">
+                  <h4 class="ft_heading">Quick Link</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="javascipt:void(0)">Home</a></li>
+                    <li><a href="javascipt:void(0)">About</a></li>
+                    <li><a href="javascipt:void(0)">Class & Schedules</a></li>
+                    <li><a href="javascipt:void(0)">Membership Plan</a></li>
+                    <li><a href="javascipt:void(0)">Blog</a></li>
+                  </ul>
+                </div>
+                <div class="ft_nav ft_nav_link">
+                  <h4 class="ft_heading">Legal</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="javascipt:void(0)">Terms Of Service</a></li>
+                    <li><a href="javascipt:void(0)">Policy Service</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="ft_bottom d-flex align-items-center justify-content-between">
+          <div class="copyright">
+            <p class="mb-0">Copyright ©2025 Gayu. All rights reserved.</p>
+          </div>
+          <div class="ft_cards">
+            <img src="assets/images/card.png" alt="card" class="img-fluid">
+          </div>
+        </div>
+      </div>
+     </footer>
+
+     <!-- ===================== -->
+
+     
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- bootstrap JS -->
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- custom JS -->
+  <script src="assets/js/slider.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/form_validation.js"></script>
+  <script src="assets/js/auth.js"></script>
+
+    
+</body>
+</html>
